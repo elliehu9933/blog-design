@@ -1,0 +1,344 @@
+/*
+ * [Modified] Modern CSS Reset
+ * @link https://github.com/hankchizljaw/modern-css-reset
+*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html {
+ overflow-x: hidden;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Begin theme styles */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+  --color-yellow: yellow;
+  --color-pink: #FF5BFF;
+  --color-grey: #333;
+  --color-blue: #0cbfe9;
+}
+
+html {
+  overflow-x: visible;
+}
+
+.skip-link {
+  display: block;
+  position: absolute;
+  left: -999px;
+  top: -999px;
+}
+
+header .link-github {
+  display: inline-block;
+  background-color: var(--color-yellow);
+  padding: 15px;
+  border-radius: 20px;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+svg {
+  height: 15px;
+  fill: var(--color-pink);
+}
+
+header {
+  background-image:
+  linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 1)
+  ), url("https://images.unsplash.com/photo-1678491448890-f4ac6414cb61?ixlib=rb-4.0.3&dl=boliviainteligente-exe69Dr3tfY-unsplash.jpg&q=80&fm=jpg&crop=entropy&cs=tinysrgb");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: norepeat;
+  padding-top: 2.5em;
+  padding-bottom: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+body {
+  font: 18px/1.5 'Roboto', sans-serif;
+  background: black;
+  color: white;
+}
+
+body header {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Audiowide", sans-serif;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  color: var(--color-yellow);
+}
+
+header h1 {
+  font-size: 6em;
+  line-height: 1.2;
+  color: var(--color-yellow);
+  text-shadow: 2px 2px 2px var(--color-yellow);
+}
+
+main {
+  max-width: 600px;
+  margin-left: auto;
+	margin-right: auto;
+  height: 
+}
+
+a.link-guidelines{
+  display: inline-block;
+    font-weight: bold;
+    background-color: yellow;
+    padding: 15px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+.profile {
+  max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.profile ul{
+  margin-left: 30px;
+}
+
+#styles ul{
+  max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-footer {
+  background-image:
+  linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.5)
+  ), url("https://images.unsplash.com/photo-1678491448890-f4ac6414cb61?ixlib=rb-4.0.3&dl=boliviainteligente-exe69Dr3tfY-unsplash.jpg&q=80&fm=jpg&crop=entropy&cs=tinysrgb");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.page-footer .container{
+  max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+  text-align: center;
+}
+
+.page-footer ul{
+  list-style: none;
+}
+
+#about ul {
+  display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+#about li{
+  text-shadow: 0 4px 10px var(--color-yellow);
+}
+
+nav ul{
+  list-style: none;
+  margin-bottom: 40px;
+  margin-top: 0;
+  background-color: var(--color-grey);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+nav li{
+  color: var(--color-pink);
+  text-align: center;
+  margin: 14px 16px;
+}
+
+@media (min-width: 650px){
+nav{
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+  }
+
+#files a{
+  display: inline-block;
+  font-weight: bold;
+  background-color: yellow;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 20px;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+ul ~ a{
+  display: inline-block;
+  background-color: yellow;
+  padding: 15px;
+  margin: 50px;
+  margin-top: 0px;
+  border-radius: 20px;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.features{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+  margin: 3.15rem 0;
+  margin-top: 1rem;
+  padding: 0;
+  color: var(--color-yellow);
+  font-weight: bold;
+  list-style: none;
+}
+
+.link-allstyles{
+    font-weight: bold;
+    background-color: yellow;
+    border-radius: 20px;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+#files .container {
+  display: grid;
+  justify-items: center;
+  row-gap: 0;
+  
+}
+
+#files {
+  margin-bottom: 30px;
+}
+
+.profile .container {
+  display: grid;
+  justify-items: center;
+}
+
+#styles .container {
+  display: grid;
+  justify-items: center;
+}
+
+#guidelines .container {
+  display: grid;
+  justify-items: center;
+}
+
+.page-footer {
+	  margin-left: auto;
+	  margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+a{
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color-pink);
+  text-shadow: 0 0 0.5px var(--color-pink);
+  background-color: none;
+}
+
+a:hover {
+  font-weight: bold;
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+@media screen and (max-width:650px){
+  main {
+    max-width: 450px;
+	  margin-left: auto;
+	  margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  #styles {
+    max-width: 450px;
+	  margin-left: auto;
+	  margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .profile {
+    max-width: 450px;
+	  margin-left: auto;
+	  margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .page-footer {
+    max-width: 550px;
+	  margin-left: auto;
+	  margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
